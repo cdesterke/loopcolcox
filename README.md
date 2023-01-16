@@ -13,13 +13,10 @@ install_github("cdesterke/loopcolcox")
 
 ### compute analyses
 ```r
-##load functions from R files and data
-source("script.R")
-source("plotbeta.R")
-source("plotnlphr.R")
+##load package
+library(loopcolcox)
 
-load(file="cancer.rda")
-ls()
+data(cancer)
 library(dplyr)
 cancer%>%select(3:7)->data
 df<-coxbycol(cancer$OS.TIME ,cancer$OS.STATUS ,data)

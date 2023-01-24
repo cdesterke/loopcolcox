@@ -29,6 +29,7 @@ head(df)
 ### graph output
 ```r
 library(patchwork)
+## nb : number of covariates to put on the graph
 p1<-plotbeta(df,nb=5,title="",size=16)
 p2<-plotnlphr(df,nb=5,title="",size=16)
 p1+p2

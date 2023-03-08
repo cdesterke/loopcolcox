@@ -29,7 +29,7 @@ plotnlphr<-function(df,nb=10,title="Univariate Cox analysis",size=18){
 	
 		## perform the barplot
 		p=ggplot(data=df,aes(x=reorder(identifiers,NLP),y=NLP,fill=prognosis))+geom_bar(stat="identity")+
-			ylim(0,max(df$NLP)+(max(df$NLP)/3))+
+			#ylim(0,max(df$NLP)+(max(df$NLP)/3))+
 			coord_flip()+
 			theme_minimal()+
 			xlab("Covariates")+

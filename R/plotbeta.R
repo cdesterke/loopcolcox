@@ -29,7 +29,7 @@ plotbeta<-function(df,nb=10,title="Univariate Cox analysis",size=18){
 	
 		## perform the barplot
 		p=ggplot(data=df,aes(x=reorder(identifiers,NLP),y=coef.beta,fill=significance))+geom_bar(stat="identity")+
-			ylim(min(df$coef.beta),max(df$coef.beta)+(max(df$coef.beta)/3))+
+			#ylim(min(df$coef.beta),max(df$coef.beta)+(max(df$coef.beta)/3))+
 			coord_flip()+
 			theme_minimal()+
 			xlab("Covariates")+

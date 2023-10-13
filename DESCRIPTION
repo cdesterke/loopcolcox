@@ -1,11 +1,13 @@
 Package: loopcolcox
 Type: Package
 Title: loop on columns with univariate Cox analyses
-Version: 1.0.0
+Version: 1.0.1
 Author: Christophe Desterke
 Maintainer: The package maintainer <christophe.desterke@gmail.com>
 Description: This package perform loop of univariate 
                 Cox analyses through columns of a data dataframe.
+Imports: ggplot2, dplyr, ggrepel, survival
+Dependency: R >= 4.2.1
 License: MIT
 Encoding: UTF-8
 LazyData: true

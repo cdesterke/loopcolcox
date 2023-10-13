@@ -26,7 +26,7 @@ head(df)
 
 ![res](https://github.com/cdesterke/loopcolcox/blob/main/results.png)
 
-### graph output
+### bar plot graph output
 ```r
 library(patchwork)
 ## nb : number of covariates to put on the graph
@@ -35,3 +35,13 @@ p2<-plotnlphr(df,nb=5,title="",size=16)
 p1+p2
 ```
 ![plot](https://github.com/cdesterke/loopcolcox/blob/main/patchwork.png)
+
+### Volcanoplot output (added in version 1.0.1)
+```r
+
+## font.size : size of the font in the graph
+coxvolcano(df,font.size=18)
+```
+![plot](https://github.com/cdesterke/loopcolcox/blob/main/volcano.png)
+
+

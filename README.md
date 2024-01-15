@@ -46,4 +46,4 @@ coxvolcano(df,font.size=18)
 
 ### references article using this software:
 
-> https://www.mdpi.com/2073-4409/12/24/2847
+> Christophe Desterke, Yao Xiang, Rima Elhage, Clémence Duruel, Yunhua Chang, Ahmed Hamaï 2023. "Ferroptosis Inducers Upregulate PD-L1 in Recurrent Triple-Negative Breast Cancer".Cancers (Basel). 2023 Dec 28;16(1):155. https://doi.org/10.3390/cancers16010155.

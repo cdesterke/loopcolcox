@@ -19,7 +19,7 @@ library(loopcolcox)
 data(cancer)
 library(dplyr)
 cancer%>%select(3:7)->data
-df<-coxbycol(cancer$time ,cancer$status ,data)
+df<-coxbycol(cancer$OS.TIME ,cancer$OS.STATUS ,data)
 head(df)
 ```
 
